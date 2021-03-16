@@ -1,0 +1,610 @@
+{
+	"data": [
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 4,
+			"mata_kuliah": "Ekonomi Informatika",
+			"kelas": "A",
+			"dosen_pengampu": "RAMBU YETTI KALAWAY, S.T.,M.T., M.M",
+			"hari": "Senin, 07:30 - 09:10",
+			"ruang": "D.2.1",
+			"kode": "TIF208",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://bit.ly/3c7FXL1",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 4,
+			"mata_kuliah": "Ekonomi Informatika",
+			"kelas": "B",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://bit.ly/3c6FwAF",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 4,
+			"mata_kuliah": "Ekonomi Informatika",
+			"kelas": "C",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://bit.ly/3rqudtw",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 4,
+			"mata_kuliah": "Analisis dan Desain Sistem",
+			"kelas": "A",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/DKDorM5ywsKDiAbioiyaDs",
+				"classroom": "https://classroom.google.com/c/Mjg4NDEyNTgyODc1?cjc=rr3rt3c",
+				"kode_classrom": "rr3rt3c"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 4,
+			"mata_kuliah": "Analisis dan Desain Sistem",
+			"kelas": "B",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/JyXpczWxZb0JqsCkuAJstJ",
+				"classroom": "https://classroom.google.com/c/Mjg4NDEyNTgyOTI0?cjc=pc7b2nh",
+				"kode_classrom": "pc7b2nh"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 4,
+			"mata_kuliah": "Analisis dan Desain Sistem",
+			"kelas": "C",
+			"dosen_pengampu": "ALFRIAN CARMEN TALAKUA, S.SI., M.Kom",
+			"hari": "Jumat 11:10 - 14:10",
+			"ruang": "D.2.1",
+			"kode": "TIF211",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/DOhxtHPXqDC81QiiX9NT5j",
+				"classroom": "https://classroom.google.com/c/Mjg4NDEyNTgyOTM1?cjc=pdfqsar",
+				"kode_classrom": "pdfqsar"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Design Grafis",
+			"kelas": "A",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/IdEYsAPZ1b9KQZ9830EizD",
+				"classroom": "https://classroom.google.com/c/Mjg4NDEyNTg2MjUz?cjc=cewzyfb",
+				"kode_classrom": "cewzyfb"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Design Grafis",
+			"kelas": "B",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/KGqEFBOaBTX8yGBq5W3iYd",
+				"classroom": "https://classroom.google.com/c/Mjg4NDEyNTg2Mjcy?cjc=wxh5rpa",
+				"kode_classrom": "wxh5rpa"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Sistem Layanan Berbasis Lokasi",
+			"kelas": "A",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/Ka9GXcq2fvSIqV7uLF16t8",
+				"classroom": "https://classroom.google.com/c/Mjg4NDEyNTg2MTc5?cjc=dunzdvt",
+				"kode_classrom": "dunzdvt"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Sistem Layanan Berbasis Lokasi",
+			"kelas": "B",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/B7V9Cv3r6syJbNCPjoOG8N",
+				"classroom": "https://classroom.google.com/c/Mjg4NDEyNTg2MjE5?cjc=72tqdvj",
+				"kode_classrom": "72tqdvj"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Grafika Komputer",
+			"kelas": "A",
+			"dosen_pengampu": "FAJAR HARIADI, S.T.,M.T",
+			"hari": "Selasa 07:30 - 10:00",
+			"ruang": "C.2.3",
+			"kode": "TIF206",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "http://bit.ly/Grafika-Komputer-A",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Grafika Komputer",
+			"kelas": "B",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "http://bit.ly/Grafika-Komputer-B",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Grafika Komputer",
+			"kelas": "C",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "http://bit.ly/Grafika-Komputer-C",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Grafika Komputer",
+			"kelas": "D",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "http://bit.ly/Grafika-Komputer-D",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Teknologi Jaringan",
+			"kelas": "A",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "http://bit.ly/Grafika-Komputer-A",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Teknologi Jaringan",
+			"kelas": "B",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "http://bit.ly/Grafika-Komputer-B",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Teknologi Jaringan",
+			"kelas": "C",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "http://bit.ly/Grafika-Komputer-C",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Teknologi Jaringan",
+			"kelas": "D",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "http://bit.ly/Grafika-Komputer-D",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Keamanan Jaringan",
+			"kelas": "-",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "http://bit.ly/Keamanan-Jaringan",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Metode Penelitian & Publikasi Ilmiah",
+			"kelas": "A",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://bit.ly/3c5QoyR",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Metode Penelitian & Publikasi Ilmiah",
+			"kelas": "B",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://bit.ly/2MTTHAF",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Metode Penelitian & Publikasi Ilmiah",
+			"kelas": "C",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://bit.ly/3efGRrD",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 4,
+			"mata_kuliah": "Sistem Operasi",
+			"kelas": "A",
+			"dosen_pengampu": "JEFONSES YARSIAN POTE, S.KOM.,M.KOM",
+			"hari": "Senin 13:20 - 15:50",
+			"ruang": "C.2.3",
+			"kode": "TIF209",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/CsVSQ0Q2uvb7bqemt0qcHi",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Aljabar Linier",
+			"kelas": "C",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/EhfwwrZsxYnLW0L9TfIBaq",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 0,
+			"mata_kuliah": "Aljabar Linier",
+			"kelas": "B",
+			"dosen_pengampu": "FERNINCE INA POTE, S.Pd., M.Si",
+			"hari": "Kamis 09:20 - 11:50",
+			"ruang": "D.2.1",
+			"kode": "TIF210",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/DrNhUBNvJNsHf7Y8X0DxVF",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+			{
+			"prodi": "Teknik Informatika",
+			"semester": 2,
+			"mata_kuliah": "Kewarganegaraan",
+			"kelas": "K",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/EXhILyeZlrYCtCBuv35b8s",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 2,
+			"mata_kuliah": "Kewarganegaraan",
+			"kelas": "J",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/EcD1Q6dbVRgGZ9qIlG6EO1",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 2,
+			"mata_kuliah": "Kewarganegaraan",
+			"kelas": "L",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/JStAqzDEWxBA2WzpmeMVwC",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 2,
+			"mata_kuliah": "Filsafat Ilmu",
+			"kelas": "J",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/C26p1l2cRad2ChO9gU4nil",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 2,
+			"mata_kuliah": "Filsafat Ilmu",
+			"kelas": "K",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/Hc0mSCCwKUIAGYnYWGoGVA",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 2,
+			"mata_kuliah": "Filsafat Ilmu",
+			"kelas": "L",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/HHIGI3EJQUh6elU3kZKIWe",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 4,
+			"mata_kuliah": "Statistik Dan Probabilitas",
+			"kelas": "B",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/Df7kC4c32yfF6c74wTBaA2",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 4,
+			"mata_kuliah": "Statistik Dan Probabilitas",
+			"kelas": "A",
+			"dosen_pengampu": "-",
+			"hari": "-",
+			"ruang": "-",
+			"kode": "-",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/KkEQRN589uZ249uYGDo1eG",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		},
+		{
+			"prodi": "Teknik Informatika",
+			"semester": 4,
+			"mata_kuliah": "Statistik Dan Probabilitas",
+			"kelas": "C",
+			"dosen_pengampu": "DENISIUS UMBU PATI, SKM.,M.Kes",
+			"hari": "Kamis 15:10 - 18:30",
+			"ruang": "D",
+			"kode": "TIF207",
+			"image": "./img/kelas.png",
+			"sortProdiName": "TIF",
+			"link_kelas": {
+				"whatsapp": "https://chat.whatsapp.com/KkEQRN589uZ249uYGDo1eG",
+				"classroom": "#",
+				"kode_classrom": "-"
+			} 			
+		}
+	],
+	"contributor": [
+		{
+			"nama": "r3ndyDinar",
+			"avatar": "./img/kawai-anime-girl.png",
+			"total_kontribusi": 4
+		},
+		{
+			"nama": "Rinto Tunggu Djama",
+			"avatar": "./img/kawai-anime-girl.png",
+			"total_kontribusi": 24
+		},		
+		{
+			"nama": "Rafael Ranjawali",
+			"avatar": "./img/kawai-anime-girl.png",
+			"total_kontribusi": 9
+		},		
+		{
+			"nama": "Dochetrin Rambu Leki",
+			"avatar": "./img/dochetrin_rambu_leki.jpg",
+			"total_kontribusi": 5
+		}
+	],
+	"dosen": [
+		{ 
+			"namaDosen": "RAMBU YETTI KALAWAY, S.T.,M.T., M.M", 
+			"avatar": "./img/img.png"
+		}
+	]
+}

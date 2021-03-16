@@ -1,0 +1,101 @@
+:root {
+  --color-mine-shaft: #2c2b2b;
+  --color-dark-grey: #4d4d4d;
+  --color-black: #767676;
+  --color-muted: #a3a3a3;
+  --color-mercury: #e8e8e8;
+  --color-gallery: #f0f0f0;
+  --color-flamingo: #f04848;
+  --color-salomie: #ffe989;
+  --color-astra: #e91e63;
+  --color-mantis: #8fca77;
+  --color-warning-1: #e44933;
+  --color-warning-2: #e4a033;
+  --color-warning-3: #31be72;
+  --color-white: #FFFFFF;
+  --color-blue: #59a0e6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+#root {
+  height: 100vh;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  resize: both;
+  overflow: auto
+}
+
+a {
+  background-color: transparent;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+input {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+.container-app {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 992px) {
+  .container-app {
+    border-radius: 10px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #root {
+    height: 100vh;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    resize: both;
+    overflow: auto
+  }
+
+}
+
+@media screen and (min-width: 1170px) {
+  #root {
+    height: 100vh;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    /*align-items: center;*/
+    resize: both;
+    overflow: auto
+  }  
+}
