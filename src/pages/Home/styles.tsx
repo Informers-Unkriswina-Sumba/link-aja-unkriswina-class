@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 	grettingContainer: {
     	backgroundColor: "lightpink",
 	},
-	infoDataClassTitle: {
+	tagLineDataClassTitle: {
 		textAlign: "center",
 	    lineHeight: 0.4,
 	},
@@ -49,8 +49,31 @@ const useStyles = makeStyles((theme) => ({
 	    overflow: "hidden"
 	},
 	filterSearchContainer: {
+		alignItems: 'center',
+		marginTop: '10px',
 		display: 'flex',
 		justifyContent: 'center',
+		gap: '10px'
+	},
+	btnResetResultSearchClass: {
+	    padding: '5px',
+	    color: '#fff',
+	    backgroundColor: "var(--color-astra)",
+    	'&:hover' : {
+			backgroundColor: 'var(--color-astra)',
+		    color: '#fff',
+	    	opacity: .7,
+    	}
+	},
+	dataSearchClass: {
+		marginTop: '7px'
+	},
+	infoResultSearchClass : {
+	    fontSize: '13px',
+	    fontWeight: 'normal',
+	    textAlign: 'center',
+	    textTransform: 'capitalize',
+	    color: 'var(--color-dark-grey)',		
 	}
 }));
 

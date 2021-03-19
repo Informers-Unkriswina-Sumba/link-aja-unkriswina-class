@@ -7,158 +7,148 @@ import CardClass from "../../components/CardClass";
 import FilterSearch from "../../components/FilterSearch";
 import db from "../../data-source/db.json";
 import Grid from '@material-ui/core/Grid';
+import { BiReset } from "react-icons/bi";
+import IconButton from '@material-ui/core/IconButton';
+
+interface IDataClassToSearching {
+  class: string,
+  dosen: string,
+  namaMataKuliah: string,
+  prodi: string,
+  semester: number | null,
+}
 
 const Home: React.FC<any> = (props) => {
   const classes = useStyles();  
   const [dataClass, setDataClass] = useState<Array<IClass>>([])
-  const [dataClassToSearch, setDataClassToSearch] = useState({
+  const [infoSearchClass, setInfoSearchClass] = useState<string>("")
+  const [dataClassToSearch, setDataClassToSearch] = useState<IDataClassToSearching>({
     class: "",
-    semester: 0,
+    semester: null,
     prodi: "",
     namaMataKuliah: "",
     dosen: "",
   })
+  const [isSearchClass, setIsSearchClass] = useState<boolean>(false)
 
-  console.log('render home');
-
-  // const updateSearchbyClassName = (className: string) => {
-  //   setDataClassToSearch({
-  //     ...dataClassToSearch,
-  //     class: className,
-  //   });
-  //   handle.onSearch();
-  // }
-  const updateSearchbySemester = (semester: number) => {
-    console.log('dataClassToSearch', dataClassToSearch);
-    let b = {
+  const updateSearchbySemester = (semester: number | null) => {
+    infoSearchClass.length > 0 ? semester === null ? setInfoSearchClass(`semester: tidak diketahui, `) : setInfoSearchClass(`semester: ${semester}, `) : semester === null ? setInfoSearchClass(`Pencarian semester: tidak diketahui, `) : setInfoSearchClass(`Pencarian semester: ${semester}, `);    
+    let tempDataClassToSearch = {
       ...dataClassToSearch,
       semester: semester,
     }
-    console.log('b',b);
-    setDataClassToSearch(b);
-    handle.onSearch(b);
+    console.log('tempDataClassToSearch',tempDataClassToSearch);
+    setDataClassToSearch(tempDataClassToSearch);
+    handle.onSearch(tempDataClassToSearch);
   }
-  // const updateSearchbyProdi = (prodi: string) => {
-  //   setDataClassToSearch({
-  //     ...dataClassToSearch,
-  //     prodi: prodi,
-  //   });
-  //   handle.onSearch();
-  // }
+  
   const updateSearchbyMataKuliah = (mataKuliah: IMataKuliah) => {
-    console.log('dataClassToSearch', dataClassToSearch);
-    let b = {
+    infoSearchClass.length > 0 ? setInfoSearchClass(`mata kuliah: ${mataKuliah.namaMataKuliah}, kelas: ${mataKuliah.kelas}, prodi: ${mataKuliah.prodi}`) : setInfoSearchClass(`Pencarian mata kuliah: ${mataKuliah.namaMataKuliah}, kelas: ${mataKuliah.kelas}, prodi: ${mataKuliah.prodi}, `); 
+
+    console.log('mataKuliah', mataKuliah)
+    let tempDataClassToSearch = {
       ...dataClassToSearch,
       class: mataKuliah.kelas,
       prodi: mataKuliah.prodi,
       namaMataKuliah: mataKuliah.namaMataKuliah,
     }
-    console.log('b',b);
-    setDataClassToSearch(b);
-    // console.log('dataClassToSearch', dataClassToSearch)
-
-    handle.onSearch(b);
-
+    console.log('tempDataClassToSearch',tempDataClassToSearch);
+    setDataClassToSearch(tempDataClassToSearch);
+    handle.onSearch(tempDataClassToSearch);
   }
   const updateSearchByDosen = (namaDosen: string) => {
-    let b = {
+    infoSearchClass.length > 0 ? setInfoSearchClass(`dosen pengampu: ${namaDosen}, `) : setInfoSearchClass(`Pencarian dosen pengampu: ${namaDosen}, `);
+    let tempDataClassToSearch = {
       ...dataClassToSearch,
       dosen: namaDosen,
     }
 
-    setDataClassToSearch(b);
-    handle.onSearch(b);
+    setDataClassToSearch(tempDataClassToSearch);
+    handle.onSearch(tempDataClassToSearch);
   }
 
-  // const memoizedOnSearchbyClassName = useCallback(updateSearchbyClassName, [])
+  const updateResetFilterSearch = () => {
+    setDataClass(db.data);
+  }
+
   const memoizedOnSearchbySemester = useCallback(updateSearchbySemester, [])
-  // const memoizedOnSearchbyProdi = useCallback(updateSearchbyProdi, [])
   const memoizedOnSearchbyMataKuliah = useCallback(updateSearchbyMataKuliah, [])
   const memoizedOnSearchByDosen = useCallback(updateSearchByDosen, [])
+  const memoizedResetFilterSearch = useCallback(updateResetFilterSearch, []);
 
-  // const getDataClassToSearch = (data:any) => {
-  //   return data;
-  // }
-  // const dataClassProps = useMemo(() => getDataClassToSearch(dataClassToSearch), [dataClassToSearch])
+  const findCorrectClass = (dataClassToSearching: IDataClassToSearching): boolean => {
+    let resultSeacrhClass:any = [];
+      if(dataClassToSearching.class.length !== 0 && dataClassToSearching.namaMataKuliah.length !== 0 && dataClassToSearching.prodi.length !== 0) {
+        resultSeacrhClass = db.data.filter((dataClass: IClass) => {
+          return dataClass.kelas === dataClassToSearching.class && 
+              dataClass.prodi === dataClassToSearching.prodi &&
+              dataClass.mata_kuliah === dataClassToSearching.namaMataKuliah
+          }); 
+      }
+      if(dataClassToSearching.dosen.length !== 0) {
+        resultSeacrhClass = db.data.filter((dataClass: IClass) => dataClass.dosen_pengampu.toLowerCase() === dataClassToSearching.dosen.toLowerCase());
+      }
+      if(dataClassToSearching.semester !== null) {
+        resultSeacrhClass = db.data.filter((dataClass: IClass) => dataClass.semester === dataClassToSearching.semester );
+      }
+      console.log('resultSeacrhClass', resultSeacrhClass)
+      if(resultSeacrhClass.length > 0) {
+        setDataClass(resultSeacrhClass);
+        return true;
+      } else {
+        return false;
+      }
+  }
 
-  const handle = {
-    // onSearchbyClassName: (className: string) => {
-    //   setDataClassToSearch({
-    //     ...dataClassToSearch,
-    //     class: className,
-    //   });
-    //   handle.onSearch();
-    // },
-    // onSearchbySemester: (semester: number) => {
-    //   setDataClassToSearch({
-    //     ...dataClassToSearch,
-    //     semester: semester,
-    //   });
-    //   handle.onSearch();
-    // },
-    // onSearchbyProdi: (prodi: string) => {
-    //   setDataClassToSearch({
-    //     ...dataClassToSearch,
-    //     prodi: prodi,
-    //   });
-    //   handle.onSearch();
-    // },
-    // onSearchbyMataKuliah: (mataKuliah: IMataKuliah) => {
-    //   console.log('dataMataKuliah', mataKuliah);      
-
-    //   setDataClassToSearch({
-    //     ...dataClassToSearch,
-    //     class: mataKuliah.kelas,
-    //     prodi: mataKuliah.prodi,
-    //     namaMataKuliah: mataKuliah.namaMataKuliah,
-    //   });
-    //   console.log('dataClassToSearch', dataClassToSearch)
-
-    //   handle.onSearch();
-    // },
-    // onSearchByDosen: (namaDosen: string) => {
-    //   let b = {
-    //     ...dataClassToSearch,
-    //     dosen: namaDosen,
-    //   }
-
-    //   setDataClassToSearch(b);
-    //   handle.onSearch(b);
-    // },
-    onSearch: async (dataClassToSearching: any) => {
-      setDataClass([]);
-      console.log('dataClassToSearching', dataClassToSearching)
-      let searchClassByClassName:IClass[] = db.data.filter((dataClass: IClass) => {
-        return dataClass.kelas === dataClassToSearching.class && 
-          dataClass.prodi === dataClassToSearching.prodi 
-      });     
-      let searchClassBySemester:IClass[] = db.data.filter((dataClass: IClass) => {
+  const findSimiliarClass = (dataClassToSearching: IDataClassToSearching) => {
+    console.log('dataClassToSearching', dataClassToSearching)
+    let searchClassByClassName:IClass[] = db.data.filter((dataClass: IClass) => {
+      return dataClass.kelas === dataClassToSearching.class && 
+        dataClass.prodi === dataClassToSearching.prodi 
+    });  
+    let searchClassBySemester:IClass[] = [];  
+    if(dataClassToSearching.semester === 0) {
+      searchClassBySemester = db.data.filter((dataClass: IClass) => dataClass.semester === 0 );
+    } else {
+      searchClassBySemester = db.data.filter((dataClass: IClass) => {
         return dataClass.semester === dataClassToSearching.semester
       });
-      let searchClassByProdi:IClass[] = db.data.filter((dataClass: IClass) => {
-        return dataClass.prodi === dataClassToSearching.prodi 
-      });
-      let searchClassByMataKuliah:IClass[] = db.data.filter((dataClass: IClass) => {
-        return dataClass.mata_kuliah === dataClassToSearching.namaMataKuliah &&
-          dataClass.prodi === dataClassToSearching.prodi         
-      });
-      let searchClassByDosen:IClass[] = db.data.filter((dataClass: IClass) => dataClass.dosen_pengampu.toLowerCase() === dataClassToSearching.dosen.toLowerCase());
+    }
+    let searchClassByProdi:IClass[] = db.data.filter((dataClass: IClass) => {
+      return dataClass.prodi === dataClassToSearching.prodi 
+    });
+    let searchClassByMataKuliah:IClass[] = db.data.filter((dataClass: IClass) => {
+      return dataClass.mata_kuliah === dataClassToSearching.namaMataKuliah &&
+        dataClass.prodi === dataClassToSearching.prodi         
+    });
+    let searchClassByDosen:IClass[] = db.data.filter((dataClass: IClass) => dataClass.dosen_pengampu.toLowerCase() === dataClassToSearching.dosen.toLowerCase());
 
-      console.log('searchClassByClassName', searchClassByClassName);
-      console.log('searchClassBySemester', searchClassBySemester);
-      console.log('searchClassByProdi', searchClassByProdi);
-      console.log('searchClassByMataKuliah', searchClassByMataKuliah);
-      console.log('searchClassByDosen', searchClassByDosen);
+    // console.log('searchClassByClassName', searchClassByClassName);
+    // console.log('searchClassBySemester', searchClassBySemester);
+    // console.log('searchClassByProdi', searchClassByProdi);
+    // console.log('searchClassByMataKuliah', searchClassByMataKuliah);
+    // console.log('searchClassByDosen', searchClassByDosen);
 
-      setDataClass([
-        ...searchClassByClassName,
-        ...searchClassBySemester,
-        ...searchClassByProdi,
-        ...searchClassByMataKuliah,
-        ...searchClassByDosen
-      ])    
+    setDataClass([
+      ...searchClassByClassName,
+      ...searchClassBySemester,
+      ...searchClassByProdi,
+      ...searchClassByMataKuliah,
+      ...searchClassByDosen
+    ]);
+  }
 
-      console.log('result data sea', dataClass);   
+  const handle = {
+    onSearch: async (dataClassToSearching: IDataClassToSearching) => {
+      setDataClass([]);
+      setIsSearchClass(true);
+      const resultFindCorrectClass = await findCorrectClass(dataClassToSearching);
+      console.log('resultFindCorrectClass', resultFindCorrectClass);
+      if(!resultFindCorrectClass) {
+        await findSimiliarClass(dataClassToSearching)
+      }
+
+      console.log('result data search class', dataClass);   
       if(dataClass.length === 0) {
         console.log('Pencarian kelas tidak ditemukan');
       } 
@@ -169,11 +159,19 @@ const Home: React.FC<any> = (props) => {
         prodi: "",
         namaMataKuliah: "",
         dosen: "",
-      })
-
+      });
     }, 
-    resetFilterSearch: () => {
+    resetResultSearchClass: () => {
       setDataClass(db.data);
+      setIsSearchClass(false);
+      setInfoSearchClass("");
+      setDataClassToSearch({
+        class: "",
+        semester: 0,
+        prodi: "",
+        namaMataKuliah: "",
+        dosen: "",
+      });
     }
   }
 
@@ -194,13 +192,25 @@ const Home: React.FC<any> = (props) => {
           byMataKuliah={memoizedOnSearchbyMataKuliah}    
           bySemester={memoizedOnSearchbySemester}       
           byDosen={memoizedOnSearchByDosen}
-          cancelFilterSearch={handle.resetFilterSearch}
+          cancelFilterSearch={memoizedResetFilterSearch}
         />
+        {isSearchClass && (
+          <IconButton className={classes.btnResetResultSearchClass} onClick={handle.resetResultSearchClass}>
+            <BiReset />
+          </IconButton>
+        )}        
       </div>
       <div className={classes.wrapperDataClass}>
-        <Typography component="h1" variant="h3" className={classes.infoDataClassTitle}>
+        <Typography component="h1" variant="h3" className={classes.tagLineDataClassTitle}>
           <span className={classes.dataClassInfoSub}>Kami Mencari Kelas Yang Paling Relevan Dengan Pencarian Anda</span> <span className={classes.dataClassInfoSubSub}>Semoga Membantu</span> 
         </Typography>
+        {isSearchClass && (
+          <div className={classes.dataSearchClass}>
+            <Typography variant="subtitle2" className={classes.infoResultSearchClass}>
+              {isSearchClass && infoSearchClass.substr(0, infoSearchClass.length-2)}
+            </Typography>      
+          </div>
+        )}
         <div className={classes.containerDataClass}>
           <Grid container spacing={1} className={classes.containerGridDataClass}>
             {dataClass.map((cleass: IClass, index: number) => (

@@ -1,5 +1,6 @@
 // React Dependencies
 import React, { useState, Fragment, useEffect } from "react";
+import {uniqWith, isEqual } from "lodash";
 // Material UI Components - Core
 import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
@@ -33,7 +34,7 @@ import { classNames } from "../../utils/classNames";
 
 interface IProps {
   // byClassName: (className: string) => void;
-  bySemester: (semester: number) => void;
+  bySemester: (semester: number | null) => void;
   // byProdi: (prodi: string) => void;
   byMataKuliah: (mataKuliah: IMataKuliah) => void;
   byDosen: (namaDosen: string) => void;
@@ -41,7 +42,7 @@ interface IProps {
 }
 interface ISearchMataKuliah {
   namaMataKuliah: string, 
-  kelas: string, 
+  kelas: string | null, 
   prodi: string, 
   sortProdiName: string,
 }
@@ -63,7 +64,7 @@ const FilterSearch: React.FC<IProps> = (props) => {
       // props.byProdi(dataMataKuliah.prodi);
       props.byMataKuliah(dataMataKuliah);
     },
-    onChangeSemester: (dataSemester: number) => {
+    onChangeSemester: (dataSemester: number | null) => {
       console.log('dataSemester', dataSemester);
       props.bySemester(dataSemester);
     },

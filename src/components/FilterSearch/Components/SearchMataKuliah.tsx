@@ -34,7 +34,7 @@ const SearchMataKuliah: React.FC<IProps> = (props) => {
   const setDataMatakuliah = () => {
     let resultFilterMataKuliah = db.data.map((dataKelas: IClass) => {
       return {
-        mata_kuliah: dataKelas.mata_kuliah,
+        namaMataKuliah: dataKelas.mata_kuliah,
         kelas: dataKelas.kelas,
         prodi: dataKelas.prodi,
         sortProdiName: dataKelas.sortProdiName
@@ -55,7 +55,7 @@ const SearchMataKuliah: React.FC<IProps> = (props) => {
       className={classes.inputAutoComplete}
       options={options.sort((a:any, b: any) => -b.firstLetter.localeCompare(a.firstLetter))}
       groupBy={(option:any) => option.firstLetter}
-      getOptionLabel={(option:any) => `${option.mata_kuliah} - ${option.kelas} - ${option.sortProdiName}`}
+      getOptionLabel={(option:any) => `${option.namaMataKuliah} - ${option.kelas} - ${option.sortProdiName}`}
       style={{ width: 300 }}
       renderInput={ (params) => 
         <TextField 

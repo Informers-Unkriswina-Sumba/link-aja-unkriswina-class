@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, Fragment} from 'react';
 import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
@@ -10,15 +10,15 @@ import { IClass } from "../../../interfaces/IClass";
 import useStyles from "./styles";
 
 interface IProps {
-  onChange: (semester: number) => void;
+  onChange: (semester: number | null) => void;
 }
 const SearchSemester: React.FC<IProps> = (props) => {
   const classes = useStyles();
   const [listSemester, setListSemester]:any = useState([]);
-  const [semester, setSemester] = useState<unknown>('');
+  const [semester, setSemester] = useState<any>(null);
 
   const handleChange = (event: React.ChangeEvent<{ value: unknown }>) => {
-    // console.log('semester', event.target.value)
+    console.log('semester', event.target.value)
     setSemester(event.target.value);
     props.onChange(Number(event.target.value))
   };
@@ -28,13 +28,12 @@ const SearchSemester: React.FC<IProps> = (props) => {
       return dataKelas.semester;
     });
     resultFilterSemester = resultFilterSemester.filter((value: any, index: number) => resultFilterSemester.indexOf(value) === index)
-    setListSemester(resultFilterSemester)
+    setListSemester(resultFilterSemester.sort())
   }
 
   useEffect(() => {
     setDataSemester();
   }, []);
-
 
   return (
     <div>
@@ -47,7 +46,11 @@ const SearchSemester: React.FC<IProps> = (props) => {
           onChange={handleChange}
         >
           {listSemester.map((semester:number, index: number) => (
-            <MenuItem key={index} value={semester}>{semester}</MenuItem>
+            semester === 0 ? (
+              <MenuItem key={index} value={0}>Tidak Diketahui</MenuItem>            
+              ) : (
+              <MenuItem key={index} value={semester}>{semester}</MenuItem>                          
+            )
           ))}
         </Select>
       </FormControl>

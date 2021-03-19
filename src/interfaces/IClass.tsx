@@ -1,6 +1,6 @@
 export interface IClass {
 	"prodi": string,
-	"semester": number,
+	"semester": number | null,
 	"mata_kuliah": string,
 	"kelas": string,
 	"dosen_pengampu": string,

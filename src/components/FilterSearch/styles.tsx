@@ -17,7 +17,6 @@ const useStyles = makeStyles((theme) => ({
     	padding: 0
     },
     filterSearchContentCointainer: {
-      marginTop: '10px',
       display: 'flex',
       justifyContent: 'center',
     },
@@ -27,7 +26,11 @@ const useStyles = makeStyles((theme) => ({
       letterSpacing: 0,
     },
     btnOpenDialogFilterSearch: {
-      backgroundColor: "var(--color-astra)"
+      backgroundColor: "var(--color-astra)",
+      '&:hover': {
+        backgroundColor: "var(--color-astra)",
+        opacity: .7
+      }
     }
 }));
 

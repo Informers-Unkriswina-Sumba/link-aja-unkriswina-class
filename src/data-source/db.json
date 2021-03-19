@@ -573,7 +573,7 @@
 			"image": "./img/kelas.png",
 			"sortProdiName": "TIF",
 			"link_kelas": {
-				"whatsapp": "https://chat.whatsapp.com/KkEQRN589uZ249uYGDo1eG",
+				"whatsapp": "#",
 				"classroom": "#",
 				"kode_classrom": "-"
 			} 			
@@ -605,6 +605,28 @@
 		{ 
 			"namaDosen": "RAMBU YETTI KALAWAY, S.T.,M.T., M.M", 
 			"avatar": "./img/img.png"
+		},
+		{ 
+			"namaDosen": "ALFRIAN CARMEN TALAKUA, S.SI., M.Kom", 
+			"avatar": "./img/img.png"
+		},
+		{ 
+			"namaDosen": "FAJAR HARIADI, S.T.,M.T", 
+			"avatar": "./img/img.png"
+		},
+		{ 
+			"namaDosen": "JEFONSES YARSIAN POTE, S.KOM.,M.KOM", 
+			"avatar": "./img/img.png"
+		},
+		{ 
+			"namaDosen": "FERNINCE INA POTE, S.Pd., M.Si", 
+			"avatar": "./img/img.png"
+		},
+		{ 
+			"namaDosen": "DENISIUS UMBU PATI, SKM.,M.Kes", 
+			"avatar": "./img/img.png"
 		}
 	]
 }
+
+

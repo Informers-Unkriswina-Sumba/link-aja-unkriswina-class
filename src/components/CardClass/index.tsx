@@ -198,7 +198,7 @@ const CardClass: React.FC<Props> = (props) => {
 	            {props.dataClass.kelas}
 	          </Avatar>
 	        }        
-	        title={props.dataClass.mata_kuliah}
+	        title={`${props.dataClass.prodi} - Semester ${props.dataClass.semester}`  }
 	        subheader={props.dataClass.hari}
 	      />
 	      <CardMedia
@@ -208,7 +208,7 @@ const CardClass: React.FC<Props> = (props) => {
 	      />
 	      <CardContent>
 	       	<Typography gutterBottom variant="h5" component="h2">
-	           Prodi {props.dataClass.prodi}
+	           {props.dataClass.mata_kuliah}
 	        </Typography>        
 	      </CardContent>	
 	      <CardActions disableSpacing>
