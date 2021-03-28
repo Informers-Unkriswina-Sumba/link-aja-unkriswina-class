@@ -5,14 +5,8 @@ const useStyles = makeStyles((theme) => ({
 	    color: "#fff",
 	    fontWeight: 600,
 	    backgroundColor: "var(--color-astra)",
-	    borderTopLeftRadius: "10px",
-	    borderTopRightRadius: "10px",
 	    alignItems: "center",
 	    fontSize: "30px",
-	    [theme.breakpoints.down('sm')]: {
-		    borderTopLeftRadius: 0,
-		    borderTopRightRadius: 0,
-	    },            
 	},
 	headerInfoContainer: {
 	    display: "flex",

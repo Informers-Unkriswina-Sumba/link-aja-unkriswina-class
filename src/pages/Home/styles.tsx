@@ -37,12 +37,19 @@ const useStyles = makeStyles((theme) => ({
 	containerDataClass: {
 		// overflow: "auto",
 	    padding: "15px",	
-	    marginTop: "10px",
+	    marginTop: "25px",
+	    height: "90vh",
+	    overflow: "scroll",
 	},	
 	containerGridDataClass: {
 	    margin: "0 auto",
 	    padding: "4px",
-	    width: "100%",
+	    width: "80%",
+	    [theme.breakpoints.down('sm')]: {
+		    margin: "0 auto",
+		    padding: "10px",
+		    width: "100%",
+	    },
 	},
 	wrapperDataClass: {
 		width: "100%",

@@ -14,8 +14,8 @@ const useStyles = makeStyles((theme) => ({
   footer: {
     backgroundColor: "var(--color-astra)",
     textAlign: "center",
-    borderBottomLeftRadius: "6px",
-    borderBottomRightRadius: "6px",  
+    borderTopLeftRadius: "10px",
+    borderTopRightRadius: "10px",  
     height: "35px",
     display: "flex",
     justifyContent: "center",
@@ -24,8 +24,8 @@ const useStyles = makeStyles((theme) => ({
     color: "#fff",
     fontWeight: 800,
     [theme.breakpoints.down('sm')]: {
-      borderTopLeftRadius: 0,
-      borderTopRightRadius: 0,
+      borderTopLeftRadius: "5px",
+      borderTopRightRadius: "5px",  
     }
   }
 

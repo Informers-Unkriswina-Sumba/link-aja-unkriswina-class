@@ -214,7 +214,7 @@ const Home: React.FC<any> = (props) => {
         <div className={classes.containerDataClass}>
           <Grid container spacing={1} className={classes.containerGridDataClass}>
             {dataClass.map((cleass: IClass, index: number) => (
-              <Grid item lg={6} md={6} xl={6} xs={12} sm={6} key={index}>
+              <Grid item lg={4} md={4} xl={4} xs={12} sm={6} key={index}>
                 <CardClass dataClass={cleass}/>
               </Grid>
             ))}

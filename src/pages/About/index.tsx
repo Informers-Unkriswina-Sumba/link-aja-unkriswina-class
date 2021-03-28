@@ -2,26 +2,19 @@ import React, { useState, Fragment } from "react";
 import { makeStyles, Theme, createStyles, withStyles } from '@material-ui/core/styles';
 import { classNames } from "../../utils/classNames";
 import ButtonContribution from "../../components/ButtonContribution";
+import Typography from '@material-ui/core/Typography';
+import useStyles from "./styles"
 
 interface IProps {
 
 }
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    buttonBersediaKontribusi: {
-			margin: theme.spacing(1),    	
-    }    
-  }),
-);
-
 const About: React.FC<IProps> = (props) => {
-	
+  const classes = useStyles();  
+
   return (
-    <div>
-    	<div>
-    		About Page
-    	</div>
+    <div className={classes.root}>
+      <Typography className={classes.textInfo} variant="h2">Halaman Ini Masih Dalam Pengembangan</Typography>
 	    <ButtonContribution/>      
     </div>
   );
